@@ -18,3 +18,6 @@ gem 'execjs'
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
 end
+
+gem 'spork'
+
