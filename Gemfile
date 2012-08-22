@@ -21,3 +21,5 @@ end
 
 gem 'spork'
 
+gem 'webrat'
+
