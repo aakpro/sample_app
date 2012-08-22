@@ -16,8 +16,10 @@ gem 'jquery-rails'
 gem 'execjs'
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.1.0"
+  gem "rspec-rails", "~> 2.0"
 end
 
 gem 'spork'
+
+gem 'webrat'
 

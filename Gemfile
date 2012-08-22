@@ -23,3 +23,5 @@ gem 'spork'
 
 gem 'webrat'
 
+gem 'heroku'
+
