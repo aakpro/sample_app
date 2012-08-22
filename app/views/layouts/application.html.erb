@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<title><%= @title%></title>
+		<%= csrf_meta_tag%>
 	</head>
 	<body>
-		<p>
-			This is <%= @title%> page!
-		</p>
+		<%= yield%>
 	</body>
 </html>
