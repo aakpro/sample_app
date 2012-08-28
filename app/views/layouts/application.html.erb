@@ -3,11 +3,38 @@
 	<head>
 		<title><%= title%></title>
 		<%= csrf_meta_tag%>
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<%= stylesheet_link_tag 'blueprint/ie'%>
+		<![endif]-->
+
 		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen'%>
 		<%= stylesheet_link_tag 'blueprint/print', :media => 'print'%>
+		<%= stylesheet_link_tag 'custom', :media => 'screen'%>
 	</head>
 	<body>
-		<h1><%= @title%> Page</h1>
-		<%= yield%>
+		<div id="container" class="container">
+			<header>
+				<%= image_tag("logo.png", :alt => "Sample app logo", :class => "round")%>
+			</header>
+			<nav class="round">
+				<ul	>
+					<li>
+						<%= link_to "Home",'#'%>
+					</li>
+					<li>
+						<%= link_to "Help",'#'%>
+					</li>
+					<li>
+						<%= link_to "Sign in",'#'%>
+					</li>
+
+				</ul>
+			</nav>
+			<section class="round" ></section>
+			<%= yield%>
+		</div>
 	</body>
 </html>
